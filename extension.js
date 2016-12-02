@@ -39,7 +39,7 @@
         };
         
       
-          bot.commands.gifsCommand: {
+          bot.commands.gifsCommand= {
                 command: ['gifs', 'giphys'],
                 rank: 'user',
                 type: 'startsWith',
