@@ -122,7 +122,7 @@
                 }
             };
         bot.commands.ballsCommand= {
-                command: ['8ball', 'ask'],
+                command: ['8balll', 'askk'],
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
@@ -138,7 +138,7 @@
                             API.sendChat(subChat(bot.chat.ball, {name: chat.un, botname: bot.settings.botName, question: argument, response: bot.chat.balls[randomSentence]}));
                      }
                 }
-            },
+            };
 
         // Load the chat package again to account for any changes
         bot.loadChat();
