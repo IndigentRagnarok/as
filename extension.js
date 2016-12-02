@@ -157,8 +157,8 @@
                     }
                 }
             };
-        bot.commands.ballCommand= {
-                command: ['8ball', 'ask'],
+        bot.commands.ballsCommand= {
+                command: ['cuntball', 'askk'],
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
