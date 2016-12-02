@@ -122,8 +122,8 @@
                     }
                 }
             };
-        bot.commands.cookieCommand= {
-                command: 'cookie',
+        bot.commands.cookiesCommand= {
+                command: 'cookies',
                 rank: 'user',
                 type: 'startsWith',
                 getCookie: function (chat) {
