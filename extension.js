@@ -2,6 +2,20 @@
 
     // Change this to your GitHub username so you don't have to modify so many things.
     var fork = "IndigentRagnarok";
+     var subChat = function (chat, obj) {
+        if (typeof chat === "undefined") {
+            API.chatLog("There is a chat text missing.");
+            console.log("There is a chat text missing.");
+            return "[Error] No text message found.";
+
+            // TODO: Get missing chat messages from source.
+        }
+        var lit = '%%';
+        for (var prop in obj) {
+            chat = chat.replace(lit + prop.toUpperCase() + lit, obj[prop]);
+        }
+        return chat;
+    };
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -170,6 +184,8 @@
       fbLink: null,
       youtubeLink: null,
       website: null,
+      thorCommand: true,
+      thorCooldown: 10,
       intervalMessages: [],
       messageInterval: 5,
       songstats: true,
