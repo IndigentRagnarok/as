@@ -169,9 +169,9 @@
                             var msg = chat.message;
                             var argument = msg.substring(cmd.length + 1).replace(/@/g, '');
                             var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomBall = Math.floor(Math.random() * bot.chat.ballsi.length);
+                            var randomBall = Math.floor(Math.random() * bot.chat.balls.length);
                             var randomSentence = Math.floor(Math.random() * 1);
-                            API.sendChat(subChat(bot.chat.ball, {name: chat.un, botname: bot.settings.botName, question: argument, response: bot.chat.ballsi[randomBall]}));
+                            API.sendChat(subChat(bot.chat.ball, {name: chat.un, botname: bot.settings.botName, question: argument, response: bot.chat.balls[randomBall]}));
                      }
                 }
             };
