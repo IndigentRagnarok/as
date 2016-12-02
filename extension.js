@@ -38,8 +38,8 @@
           }
         };
         
-        bot.commands.gifCommand: {
-                command: ['gif', 'giphy'],
+        bot.commands.gifsCommand: {
+                command: ['gifs', 'giphys'],
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
