@@ -171,7 +171,7 @@
                             var randomUser = Math.floor(Math.random() * crowd.length);
                             var randomBall = Math.floor(Math.random() * bot.chat.balls.length);
                             var randomSentence = Math.floor(Math.random() * 1);
-                            API.sendChat(subChat(bot.chat.ball, {name: chat.un, botname: bot.settings.botName, question: argument, response: bot.chat.balls[randomBall]}));
+                            API.sendChat(subChat(bot.chat.balls, {name: chat.un, botname: bot.settings.botName, question: argument, response: bot.chat.balls[randomBall]}));
                      }
                 }
             };
