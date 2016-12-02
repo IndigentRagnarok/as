@@ -36,7 +36,7 @@
               API.sendChat("/me Cunt!!!");
             }
           }
-        },
+        };
         
         bot.commands.gifsCommand: {
                 command: ['gifs', 'giphys'],
