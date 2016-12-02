@@ -64,7 +64,7 @@
     "greyuser": "Only bouncers and up can run a bot.",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
     "online": "\/me %%BOTNAME%% v%%VERSION%% online!",
-    "welcome": "\/me Welcome %%NAME%%",
+    "welcome": "\/me here come %%NAME%% , o shit whaddup!",
     "welcomeback": "\/me Welcome back, %%NAME%%",
     "songknown": "\/me @%%NAME%%, this song is in the DJ history.",
     "notavailable": "\/me @%%NAME%%, the song you played was not available.",
