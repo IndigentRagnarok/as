@@ -154,7 +154,7 @@
                             var randomBall = Math.floor(Math.random() * bot.chat.balls.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             var index= Math.floor(Math.random() * (sentences.length)); 
-                            API.sendChat(subChat(bot.chat.ball, {name: chat.un, botname: bot.settings.botName, question: argument, response: bot.chat.balls[sentences[index]]}));
+                            API.sendChat(subChat(bot.chat.ball, {name: chat.un, botname: bot.settings.botName, question: argument, response: return[sentences[index]]}));
                      }
                 }
             };
