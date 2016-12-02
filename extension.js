@@ -151,7 +151,7 @@
                                 return API.sendChat(subChat(bot.chat.selfcookie, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(bot.chat.cookia, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                                return API.sendChat(subChat(bot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
                             }
                         }
                     }
