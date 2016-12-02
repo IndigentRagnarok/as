@@ -16,24 +16,7 @@
         }
         return chat;
     };
-    var sentences= [
-    'so fat not even Dora can explore her',
-    'so  fat I swerved to miss her and ran out of gas',
-    'so smelly she put on Right Guard and it went left',
-    'so fat she hasn’t got cellulite, she’s got celluheavy',
-    'so fat she don’t need no internet – she’s already world wide',
-    'so hair her armpits look like Don King in a headlock',
-    'so classless she could be a Marxist utopia',
-    'so fat she can hear bacon cooking in Canada',
-    'so fat she won “The Bachelor” because she all those other bitches',
-    'so stupid she believes everything that Brian Williams says',
-    'so ugly she scared off Flavor Flav',
-    'is like Domino’s Pizza, one call does it all',
-    'is twice the man you are',
-    'is like Bazooka Joe, 5 cents a blow',
-    'is like an ATM, open 24/7',
-    'is like a championship ring, everybody puts a finger in her'
-];
+
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -139,25 +122,7 @@
                     }
                 }
             };
-        bot.commands.ballsCommand= {
-                command: ['8balll', 'askk'],
-                rank: 'user',
-                type: 'startsWith',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!bot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                            var crowd = API.getUsers();
-                            var msg = chat.message;
-                            var argument = msg.substring(cmd.length + 1).replace(/@/g, '');
-                            var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomBall = Math.floor(Math.random() * bot.chat.balls.length);
-                            var randomSentence = Math.floor(Math.random() * 1);
-                            var index= Math.floor(Math.random() * (sentences.length)); 
-                            API.sendChat(subChat(bot.chat.ball, {name: chat.un, botname: bot.settings.botName, question: argument, response: return[sentences[index]]}));
-                     }
-                }
-            };
+       
 
         // Load the chat package again to account for any changes
         bot.loadChat();
