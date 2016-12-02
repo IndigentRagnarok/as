@@ -127,8 +127,8 @@
                 rank: 'user',
                 type: 'startsWith',
                 getCookie: function (chat) {
-                    var c = Math.floor(Math.random() * bot.chat.cookies.length);
-                    return bot.chat.cookies[c];
+                    var c = Math.floor(Math.random() * bot.chat.cookieso.length);
+                    return bot.chat.cookieso[c];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -151,7 +151,7 @@
                                 return API.sendChat(subChat(bot.chat.selfcookie, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(bot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                                return API.sendChat(subChat(bot.chat.cookia, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
                             }
                         }
                     }
